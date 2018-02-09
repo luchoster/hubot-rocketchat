@@ -12,7 +12,7 @@ ENV BOT_NAME "rocketbot"
 ENV BOT_OWNER "No owner specified"
 ENV BOT_DESC "Hubot with rocketbot adapter"
 
-# ENV EXTERNAL_SCRIPTS=hubot-diagnostics,hubot-help,hubot-google-images,hubot-google-translate,hubot-pugme,hubot-maps,hubot-rules,hubot-shipit
+ENV EXTERNAL_SCRIPTS=watson-developer-cloud
 
 RUN yo hubot --owner="$BOT_OWNER" --name="$BOT_NAME" --description="$BOT_DESC" --defaults && \
   npm install hubot-rocketchat
